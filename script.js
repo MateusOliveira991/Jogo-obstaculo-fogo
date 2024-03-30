@@ -25,6 +25,12 @@ gameContainer.addEventListener("click", () => {
   }
 });
 
+gameContainer.addEventListener("touchstart", () => {
+  if (!alreadyJump) {
+    jump();
+  }
+});
+
 function jump() {
   mario.classList.add("jump");
   alreadyJump = true;

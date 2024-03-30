@@ -3,12 +3,10 @@ const score = document.querySelector(".score");
 let alreadyJump = false;
 let count = 0;
 
-
 const mario = document.createElement("img");
 mario.src = "img/mario.gif";
 mario.classList.add("mario");
 gameContainer.appendChild(mario);
-
 
 const fogo = document.createElement("img");
 fogo.src = "img/fogo.png";
@@ -16,21 +14,25 @@ fogo.classList.add("fogo");
 gameContainer.appendChild(fogo);
 
 document.addEventListener("keydown", (e) => {
-  if ((e.code === "ArrowUp") | (e.code === "Space")) {
+  if ((e.code === "ArrowUp" || e.code === "Space") && !alreadyJump) {
+    jump();
+  }
+});
+
+gameContainer.addEventListener("click", () => {
+  if (!alreadyJump) {
     jump();
   }
 });
 
 function jump() {
-  if (!alreadyJump) {
-    mario.classList.add("jump");
-    alreadyJump = true;
+  mario.classList.add("jump");
+  alreadyJump = true;
 
-    setTimeout(() => {
-      mario.classList.remove("jump");
-      alreadyJump = false;
-    }, 1100);
-  }
+  setTimeout(() => {
+    mario.classList.remove("jump");
+    alreadyJump = false;
+  }, 1100);
 }
 
 setInterval(() => {
@@ -47,5 +49,5 @@ setInterval(() => {
   }
 
   count++;
-  score.innerHTML = `SCORE: ${count}`;
+  score.textContent = `SCORE: ${count}`;
 }, 10);

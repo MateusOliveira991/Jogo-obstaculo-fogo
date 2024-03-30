@@ -10,7 +10,15 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f7f7f7;
+  
+
+  
+}
+
+.container {
   background-image: url('img/floresta.png'); 
+  padding: 300px;
+  height: 100%;
 }
   
 

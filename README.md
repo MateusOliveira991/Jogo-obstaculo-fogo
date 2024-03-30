@@ -5,4 +5,5 @@ Peguei algumas imagens aleatórias da internet para fazer algo rápido, então: 
 
 
 
-![image](https://github.com/MateusOliveira991/Jogo-obstaculo-fogo/assets/142065746/5a0de791-95f4-4740-ab47-b2a6e85b7095)
+![image](https://github.com/MateusOliveira991/Jogo-obstaculo-fogo/assets/142065746/dc1ec86c-32ac-46d0-8945-5d967943f03f)
+

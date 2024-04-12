@@ -49,10 +49,10 @@ setInterval(() => {
     window.getComputedStyle(fogo).getPropertyValue("left")
   );
 
-  if (fogoLeft > 40 && fogoLeft < 180 && marioBottom <= 50 && !alreadyJump) {
-    alert(`Game Over! Seu score foi: ${count}`);
-    count = 0;
-  }
+  // if (fogoLeft > 40 && fogoLeft < 180 && marioBottom <= 50 && !alreadyJump) {
+  //   alert(`Game Over! Seu score foi: ${count}`);
+  //   count = 0;
+  // }
 
   count++;
   score.textContent = `SCORE: ${count}`;

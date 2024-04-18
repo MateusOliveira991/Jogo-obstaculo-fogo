@@ -112,6 +112,13 @@ footer {
 
 @media screen and (max-width: 600px) {
 
+  body {
+    width: 100vw; 
+    height: 100vh; 
+    margin: 0; 
+    overflow: hidden; /
+  }
+
  
   .container {
     background-size: 300px auto;

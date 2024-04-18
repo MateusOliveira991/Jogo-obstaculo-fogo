@@ -19,13 +19,13 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-gameContainer.addEventListener("click", () => {
+document.addEventListener("click", () => {
   if (!alreadyJump) {
     jump();
   }
 });
 
-gameContainer.addEventListener("touchstart", () => {
+document.addEventListener("touchstart", () => {
   if (!alreadyJump) {
     jump();
   }

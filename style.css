@@ -22,16 +22,34 @@ body {
   position: relative
 }
 
+/* .game {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid white;
+  
+
+  
+} */
+
+
 .game {
   height: 350px;
   width: 800px;
   position: relative;
   overflow: hidden;
-  border-bottom: 2px solid white;
-
-  
 }
 
+.game::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  height: 2px;
+  background-color: white;
+}
 .score {
   position: absolute;
   left: 0;
@@ -71,7 +89,7 @@ footer {
   position: fixed; 
   left: 0; 
   bottom: 0; 
- 
+ width: 100%;
 }
 
 @keyframes fogo {

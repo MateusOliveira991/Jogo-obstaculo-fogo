@@ -5,17 +5,21 @@
 }
 
 body {
-  height: 100vh;
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f7f7f7;
+  background-color: #000;
+  
 }
 
 .container {
-  background-image: url('img/floresta.png'); 
-  padding: 300px;
-  height: 100%;
+  
+ height: auto;
+ width: auto;
+  background-size: 100% auto;
+  padding: 100px;
+  position: relative
 }
 
 .game {
@@ -23,7 +27,9 @@ body {
   width: 800px;
   position: relative;
   overflow: hidden;
-  bottom: -210px;
+  border-bottom: 2px solid white;
+
+  
 }
 
 .score {
@@ -103,86 +109,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 1280px) {
-
- 
-  .container {
-    background-size: 300px auto;
-    padding: 100px; 
-    background-image: url('img/florestacell.png'); 
-    
-
-  }  
-
-  .game {    
-    height: 200px;
-    width: 400px;
-    margin-top: -75px;
-  }
-
-  .mario { 
-    width: 140px;
-    height: 100px;
-    background-size: 140px;
-    margin-left: 55px;
-  }
-
-  .fogo {
-    width: 30px;
-    height: 45px;
-    background-size: 42px;
-  } 
-
-  .score {
-    font-size: 12px;
-    margin-left: 40px;
-    
-  } 
-
-} 
-
-@media screen and (max-width: 834px) {
-
- 
-  .container {
-    background-size: 100% auto;
-
-    background-image: url('img/florestacell.png'); 
- 
-    
-     }  
-
-  .game {    
-    height: 200px;
-    width: 400px;
-    margin-top: 345px;
-    
-  }
-
-  .mario { 
-    width: 140px;
-    height: 100px;
-    background-size: 140px;
-    margin-left: 55px;
-  }
-
-  .fogo {
-    width: 30px;
-    height: 45px;
-    background-size: 42px;
-  } 
-
-  .score {
-    font-size: 12px;
-    margin-left: 40px;
-    
-  }
-
-  footer{
-    margin-top: 20px;
-  }
-
-} 
 
 @media screen and (max-width: 600px) {
 
@@ -190,7 +116,7 @@ footer {
   .container {
     background-size: 300px auto;
     padding: 100px; 
-    background-image: url('img/florestacell.png'); 
+    ; 
     
 
   }  
